@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Car details</h1>
+            {% for car in cars %}
+                <h2>Car name: {{ car.name }}</h2>
+                <h2>Car year: {{ car.year }}</h2>
+                <h2>Car price: {{ car.price }}</h2>
+                <h2>Car color: {{ car.color }}</h2>
+                <h2>Car is_new: {{ car.is_new }}</h2>
+            {% endfor %}
+        </body>
+</html>
